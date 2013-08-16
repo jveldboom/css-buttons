@@ -1,0 +1,290 @@
+.btn {
+  display: inline-block;
+  font-family: helvetica, sans-serif;
+  padding: 5px 15px;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border: 0; }
+
+.btn-small {
+  font-size: .8em;
+  font-weight: normal; }
+
+.btn-large {
+  font-size: 1.4em; }
+
+.btn {
+  background: #bdc3c7;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b7bec2), color-stop(100%, #bdc3c7));
+  background: -moz-linear-gradient(center top, #b7bec2 0%, #bdc3c7 100%);
+  -webkit-box-shadow: 0px 5px 0px 0px #949da4, 0px -1px 0px 0px #d9dcde inset;
+  -moz-box-shadow: 0px 5px 0px 0px #949da4, 0px -1px 0px 0px #d9dcde inset;
+  box-shadow: 0px 5px 0px 0px #949da4, 0px -1px 0px 0px #d9dcde inset;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: 0px 1px 0px #869198; }
+  .btn:hover, .btn:focus {
+    background: #bdc3c7;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cbd0d3), color-stop(100%, #bdc3c7));
+    background: -moz-linear-gradient(center top, #cbd0d3 0%, #bdc3c7 100%); }
+  .btn:active {
+    -webkit-box-shadow: 0px 2px 0px 0px #a1aab0, 0px -1px 0px 0px #a1aab0 inset;
+    -moz-box-shadow: 0px 2px 0px 0px #a1aab0, 0px -1px 0px 0px #a1aab0 inset;
+    box-shadow: 0px 2px 0px 0px #a1aab0, 0px -1px 0px 0px #a1aab0 inset;
+    -webkit-transition: background-color 0.3s linear;
+    -moz-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+    -webkit-transform: translateY(3px);
+    -moz-transform: translateY(3px);
+    transform: translateY(3px); }
+
+.btn-red {
+  background: #e74c3c;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e64433), color-stop(100%, #e74c3c));
+  background: -moz-linear-gradient(center top, #e64433 0%, #e74c3c 100%);
+  -webkit-box-shadow: 0px 5px 0px 0px #bf2718, 0px -1px 0px 0px #ed7669 inset;
+  -moz-box-shadow: 0px 5px 0px 0px #bf2718, 0px -1px 0px 0px #ed7669 inset;
+  box-shadow: 0px 5px 0px 0px #bf2718, 0px -1px 0px 0px #ed7669 inset;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: 0px 1px 0px #a82315; }
+  .btn-red:hover, .btn-red:focus {
+    background: #e74c3c;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ea6153), color-stop(100%, #e74c3c));
+    background: -moz-linear-gradient(center top, #ea6153 0%, #e74c3c 100%); }
+  .btn-red:active {
+    -webkit-box-shadow: 0px 2px 0px 0px #d62c1a, 0px -1px 0px 0px #d62c1a inset;
+    -moz-box-shadow: 0px 2px 0px 0px #d62c1a, 0px -1px 0px 0px #d62c1a inset;
+    box-shadow: 0px 2px 0px 0px #d62c1a, 0px -1px 0px 0px #d62c1a inset;
+    -webkit-transition: background-color 0.3s linear;
+    -moz-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+    -webkit-transform: translateY(3px);
+    -moz-transform: translateY(3px);
+    transform: translateY(3px); }
+
+.btn-blue {
+  background: #3498db;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2b94d9), color-stop(100%, #3498db));
+  background: -moz-linear-gradient(center top, #2b94d9 0%, #3498db 100%);
+  -webkit-box-shadow: 0px 5px 0px 0px #1d6fa5, 0px -1px 0px 0px #5faee3 inset;
+  -moz-box-shadow: 0px 5px 0px 0px #1d6fa5, 0px -1px 0px 0px #5faee3 inset;
+  box-shadow: 0px 5px 0px 0px #1d6fa5, 0px -1px 0px 0px #5faee3 inset;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: 0px 1px 0px #196090; }
+  .btn-blue:hover, .btn-blue:focus {
+    background: #3498db;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4aa3df), color-stop(100%, #3498db));
+    background: -moz-linear-gradient(center top, #4aa3df 0%, #3498db 100%); }
+  .btn-blue:active {
+    -webkit-box-shadow: 0px 2px 0px 0px #217dbb, 0px -1px 0px 0px #217dbb inset;
+    -moz-box-shadow: 0px 2px 0px 0px #217dbb, 0px -1px 0px 0px #217dbb inset;
+    box-shadow: 0px 2px 0px 0px #217dbb, 0px -1px 0px 0px #217dbb inset;
+    -webkit-transition: background-color 0.3s linear;
+    -moz-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+    -webkit-transform: translateY(3px);
+    -moz-transform: translateY(3px);
+    transform: translateY(3px); }
+
+.btn-green {
+  background: #2ecc71;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2cc46c), color-stop(100%, #2ecc71));
+  background: -moz-linear-gradient(center top, #2cc46c 0%, #2ecc71 100%);
+  -webkit-box-shadow: 0px 5px 0px 0px #208e4e, 0px -1px 0px 0px #54d98c inset;
+  -moz-box-shadow: 0px 5px 0px 0px #208e4e, 0px -1px 0px 0px #54d98c inset;
+  box-shadow: 0px 5px 0px 0px #208e4e, 0px -1px 0px 0px #54d98c inset;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: 0px 1px 0px #1b7943; }
+  .btn-green:hover, .btn-green:focus {
+    background: #2ecc71;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #40d47e), color-stop(100%, #2ecc71));
+    background: -moz-linear-gradient(center top, #40d47e 0%, #2ecc71 100%); }
+  .btn-green:active {
+    -webkit-box-shadow: 0px 2px 0px 0px #25a25a, 0px -1px 0px 0px #25a25a inset;
+    -moz-box-shadow: 0px 2px 0px 0px #25a25a, 0px -1px 0px 0px #25a25a inset;
+    box-shadow: 0px 2px 0px 0px #25a25a, 0px -1px 0px 0px #25a25a inset;
+    -webkit-transition: background-color 0.3s linear;
+    -moz-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+    -webkit-transform: translateY(3px);
+    -moz-transform: translateY(3px);
+    transform: translateY(3px); }
+
+.btn-purple {
+  background: #9b59b6;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9752b3), color-stop(100%, #9b59b6));
+  background: -moz-linear-gradient(center top, #9752b3 0%, #9b59b6 100%);
+  -webkit-box-shadow: 0px 5px 0px 0px #713b87, 0px -1px 0px 0px #b07cc6 inset;
+  -moz-box-shadow: 0px 5px 0px 0px #713b87, 0px -1px 0px 0px #b07cc6 inset;
+  box-shadow: 0px 5px 0px 0px #713b87, 0px -1px 0px 0px #b07cc6 inset;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: 0px 1px 0px #623475; }
+  .btn-purple:hover, .btn-purple:focus {
+    background: #9b59b6;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a66bbe), color-stop(100%, #9b59b6));
+    background: -moz-linear-gradient(center top, #a66bbe 0%, #9b59b6 100%); }
+  .btn-purple:active {
+    -webkit-box-shadow: 0px 2px 0px 0px #804399, 0px -1px 0px 0px #804399 inset;
+    -moz-box-shadow: 0px 2px 0px 0px #804399, 0px -1px 0px 0px #804399 inset;
+    box-shadow: 0px 2px 0px 0px #804399, 0px -1px 0px 0px #804399 inset;
+    -webkit-transition: background-color 0.3s linear;
+    -moz-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+    -webkit-transform: translateY(3px);
+    -moz-transform: translateY(3px);
+    transform: translateY(3px); }
+
+.btn-turquoise {
+  background: #1abc9c;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #19b395), color-stop(100%, #1abc9c));
+  background: -moz-linear-gradient(center top, #19b395 0%, #1abc9c 100%);
+  -webkit-box-shadow: 0px 5px 0px 0px #117964, 0px -1px 0px 0px #28e1bd inset;
+  -moz-box-shadow: 0px 5px 0px 0px #117964, 0px -1px 0px 0px #28e1bd inset;
+  box-shadow: 0px 5px 0px 0px #117964, 0px -1px 0px 0px #28e1bd inset;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: 0px 1px 0px #0e6252; }
+  .btn-turquoise:hover, .btn-turquoise:focus {
+    background: #1abc9c;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1dd2af), color-stop(100%, #1abc9c));
+    background: -moz-linear-gradient(center top, #1dd2af 0%, #1abc9c 100%); }
+  .btn-turquoise:active {
+    -webkit-box-shadow: 0px 2px 0px 0px #148f77, 0px -1px 0px 0px #148f77 inset;
+    -moz-box-shadow: 0px 2px 0px 0px #148f77, 0px -1px 0px 0px #148f77 inset;
+    box-shadow: 0px 2px 0px 0px #148f77, 0px -1px 0px 0px #148f77 inset;
+    -webkit-transition: background-color 0.3s linear;
+    -moz-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+    -webkit-transform: translateY(3px);
+    -moz-transform: translateY(3px);
+    transform: translateY(3px); }
+
+.btn-orange {
+  background: #e67e22;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e4791a), color-stop(100%, #e67e22));
+  background: -moz-linear-gradient(center top, #e4791a 0%, #e67e22 100%);
+  -webkit-box-shadow: 0px 5px 0px 0px #a85913, 0px -1px 0px 0px #eb9950 inset;
+  -moz-box-shadow: 0px 5px 0px 0px #a85913, 0px -1px 0px 0px #eb9950 inset;
+  box-shadow: 0px 5px 0px 0px #a85913, 0px -1px 0px 0px #eb9950 inset;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: 0px 1px 0px #924d10; }
+  .btn-orange:hover, .btn-orange:focus {
+    background: #e67e22;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e98b39), color-stop(100%, #e67e22));
+    background: -moz-linear-gradient(center top, #e98b39 0%, #e67e22 100%); }
+  .btn-orange:active {
+    -webkit-box-shadow: 0px 2px 0px 0px #bf6516, 0px -1px 0px 0px #bf6516 inset;
+    -moz-box-shadow: 0px 2px 0px 0px #bf6516, 0px -1px 0px 0px #bf6516 inset;
+    box-shadow: 0px 2px 0px 0px #bf6516, 0px -1px 0px 0px #bf6516 inset;
+    -webkit-transition: background-color 0.3s linear;
+    -moz-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+    -webkit-transform: translateY(3px);
+    -moz-transform: translateY(3px);
+    transform: translateY(3px); }
+
+.btn-yellow {
+  background: #f1c40f;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e8bd0e), color-stop(100%, #f1c40f));
+  background: -moz-linear-gradient(center top, #e8bd0e 0%, #f1c40f 100%);
+  -webkit-box-shadow: 0px 5px 0px 0px #aa8a0a, 0px -1px 0px 0px #f4d03f inset;
+  -moz-box-shadow: 0px 5px 0px 0px #aa8a0a, 0px -1px 0px 0px #f4d03f inset;
+  box-shadow: 0px 5px 0px 0px #aa8a0a, 0px -1px 0px 0px #f4d03f inset;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: 0px 1px 0px #927608; }
+  .btn-yellow:hover, .btn-yellow:focus {
+    background: #f1c40f;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2ca27), color-stop(100%, #f1c40f));
+    background: -moz-linear-gradient(center top, #f2ca27 0%, #f1c40f 100%); }
+  .btn-yellow:active {
+    -webkit-box-shadow: 0px 2px 0px 0px #c29d0b, 0px -1px 0px 0px #c29d0b inset;
+    -moz-box-shadow: 0px 2px 0px 0px #c29d0b, 0px -1px 0px 0px #c29d0b inset;
+    box-shadow: 0px 2px 0px 0px #c29d0b, 0px -1px 0px 0px #c29d0b inset;
+    -webkit-transition: background-color 0.3s linear;
+    -moz-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+    -webkit-transform: translateY(3px);
+    -moz-transform: translateY(3px);
+    transform: translateY(3px); }
+
+.btn-gray {
+  background: #95a5a6;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8fa0a1), color-stop(100%, #95a5a6));
+  background: -moz-linear-gradient(center top, #8fa0a1 0%, #95a5a6 100%);
+  -webkit-box-shadow: 0px 5px 0px 0px #6d8082, 0px -1px 0px 0px #b1bdbd inset;
+  -moz-box-shadow: 0px 5px 0px 0px #6d8082, 0px -1px 0px 0px #b1bdbd inset;
+  box-shadow: 0px 5px 0px 0px #6d8082, 0px -1px 0px 0px #b1bdbd inset;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: 0px 1px 0px #617374; }
+  .btn-gray:hover, .btn-gray:focus {
+    background: #95a5a6;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a3b1b2), color-stop(100%, #95a5a6));
+    background: -moz-linear-gradient(center top, #a3b1b2 0%, #95a5a6 100%); }
+  .btn-gray:active {
+    -webkit-box-shadow: 0px 2px 0px 0px #798d8f, 0px -1px 0px 0px #798d8f inset;
+    -moz-box-shadow: 0px 2px 0px 0px #798d8f, 0px -1px 0px 0px #798d8f inset;
+    box-shadow: 0px 2px 0px 0px #798d8f, 0px -1px 0px 0px #798d8f inset;
+    -webkit-transition: background-color 0.3s linear;
+    -moz-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+    -webkit-transform: translateY(3px);
+    -moz-transform: translateY(3px);
+    transform: translateY(3px); }
+
+.btn-navy {
+  background: #34495e;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #304457), color-stop(100%, #34495e));
+  background: -moz-linear-gradient(center top, #304457 0%, #34495e 100%);
+  -webkit-box-shadow: 0px 5px 0px 0px #19232d, 0px -1px 0px 0px #46627f inset;
+  -moz-box-shadow: 0px 5px 0px 0px #19232d, 0px -1px 0px 0px #46627f inset;
+  box-shadow: 0px 5px 0px 0px #19232d, 0px -1px 0px 0px #46627f inset;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: 0px 1px 0px #10161c; }
+  .btn-navy:hover, .btn-navy:focus {
+    background: #34495e;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3d566e), color-stop(100%, #34495e));
+    background: -moz-linear-gradient(center top, #3d566e 0%, #34495e 100%); }
+  .btn-navy:active {
+    -webkit-box-shadow: 0px 2px 0px 0px #222f3d, 0px -1px 0px 0px #222f3d inset;
+    -moz-box-shadow: 0px 2px 0px 0px #222f3d, 0px -1px 0px 0px #222f3d inset;
+    box-shadow: 0px 2px 0px 0px #222f3d, 0px -1px 0px 0px #222f3d inset;
+    -webkit-transition: background-color 0.3s linear;
+    -moz-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+    -webkit-transform: translateY(3px);
+    -moz-transform: translateY(3px);
+    transform: translateY(3px); }

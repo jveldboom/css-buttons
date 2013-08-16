@@ -1,0 +1,78 @@
+@import 'colors';
+@mixin box-shadow($c1,$c2,$m: 5px)
+{
+    -webkit-box-shadow: 0px $m 0px 0px $c1, 0px -1px 0px 0px $c2 inset;
+    -moz-box-shadow: 0px $m 0px 0px $c1, 0px -1px 0px 0px $c2 inset;
+    box-shadow: 0px $m 0px 0px $c1, 0px -1px 0px 0px $c2 inset;
+}
+@mixin border-radius($radius: 5px){
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+@mixin transition($num: 0.2s){
+    -webkit-transition: background-color $num linear;
+    -moz-transition: background-color $num linear;
+    -o-transition: background-color $num linear;
+    transition: background-color $num linear;
+}
+@mixin text-shadow($color){text-shadow: 0px 1px 0px $color;}
+@mixin background($main,$stop){
+    background: $main;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$stop), color-stop(100%,$main));
+    background: -moz-linear-gradient(center top, $stop 0%, $main 100%);
+}
+@mixin transform($m: 3px){
+    -webkit-transform: translateY($m);
+    -moz-transform: translateY($m);
+    transform: translateY($m);
+}
+
+@mixin buttons($color)
+{
+	@include background($color,darken($color,2));
+	@include box-shadow(darken($color,15),lighten($color,10));
+	@include border-radius();
+	@include text-shadow(darken($color,20));
+	&:hover, &:focus {
+		@include background($color,lighten($color,5)); 
+	}
+	&:active {
+		@include box-shadow(darken($color,10),darken($color,10),2px);
+		@include transition(0.3s);
+		@include transform();
+	}
+}
+
+.btn {
+	display: inline-block;
+	font-family: helvetica, sans-serif;
+	padding: 5px 15px;
+	@include transition();
+	
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	border: 0;
+}
+.btn-small {
+	font-size: .8em;
+	font-weight: normal;
+}
+
+.btn-large {
+	font-size: 1.4em;
+}
+
+
+.btn {@include buttons($color-gray-light);}
+.btn-red {@include buttons($color-red);}
+.btn-blue {@include buttons($color-blue);}
+.btn-green {@include buttons($color-green);}
+.btn-purple {@include buttons($color-purple);}
+.btn-turquoise {@include buttons($color-turquoise);}
+.btn-orange {@include buttons($color-orange);}
+.btn-yellow {@include buttons($color-yellow);}
+.btn-gray {@include buttons($color-gray);}
+.btn-navy {@include buttons($color-navy);}

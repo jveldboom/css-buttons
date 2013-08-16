@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+	<title>css-buttons</title>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="foundation/css/foundation.css">
+	<link rel="stylesheet" href="foundation/css/normalize.css">
+	<link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="css/helium.css" id="style">
+</head>
+<body>
+	<header>
+		<div class="row">
+			<div class="large-12 columns">
+				CSS Buttons
+			</div>
+			
+		</div>
+	</header>
+
+	<div class="row">
+		<div class="large-2 columns">
+			<ul class="styles">
+				<li><a href="" rel="css/helium.css" data-title="Helium" data-description="Based on <a href='https://github.com/cbrauckmuller/helium'>Helium framework</a>">helium.css</a></li>
+				<li><a href="" rel="css/press.css" data-title="Long Press" data-description="Large bottom">press.css</a></li>
+				<li><a href="" rel="css/simple.css" data-title="Simple" data-description="">simple.css</a></li>
+				
+				<li><a href="" rel="css/call-action.css" data-title="Call that Action" data-description="Based on <a href='http://dribbble.com/shots/1182889-Call-that-action?list=tags&tag=buttons'>this dribbble</a>">call-action.css</a></li>
+				
+				<li><a href="" rel="css/cupid-blue.css" data-title="Cupid" data-description="Light fixed-width buttons">cupid-blue.css</a></li>
+				
+				<li><a href="" rel="css/hero.css" data-title="Hero" data-description="">hero.css</a></li>
+				<li><a href="" rel="css/johnveldboom.css" data-title="John Veldboom" data-description="Based on the styles from <a href='http://johnveldboom.com'>johnveldboom.com</a>">johnveldboom.css</a></li>
+				
+
+			</ul>
+			<hr>
+			Extra Downloads
+			<ul>
+				<li><a href="css/colors.scss">colors.scss</a></li>
+			</ul>
+		</div>
+		<div class="large-10 columns">
+			<h2 class="title">Small Press</h2>
+			<p class="description">Large block buttons</p>
+			<div class="download">
+				<p>Download: <a href="#" class="css">CSS</a>, <a href="#" class="scss">SCSS</a></p>
+			</div>
+			<div class="demo">
+				<button class="btn">.btn</button>
+				<button class="btn btn-red">.btn .btn-red</button>
+				<button class="btn btn-blue">.btn .btn-blue</button>
+				<button class="btn btn-green">.btn .btn-green</button>
+				<button class="btn btn-purple">.btn .btn-purple</button>
+				<button class="btn btn-turquoise">.btn .btn-turquoise</button>
+				
+				<button class="btn btn-orange">.btn .btn-orange</button>
+				<button class="btn btn-yellow">.btn .btn-yellow</button>
+				
+				<button class="btn btn-navy">.btn .navy</button>
+			</div>
+			
+			<div class="demo dark">
+				<button class="btn">.btn</button>
+				<button class="btn btn-red">.btn .btn-red</button>
+				<button class="btn btn-blue">.btn .btn-blue</button>
+				<button class="btn btn-green">.btn .btn-green</button>
+				<button class="btn btn-purple">.btn .btn-purple</button>
+				<button class="btn btn-turquoise">.btn .btn-turquoise</button>
+				
+				<button class="btn btn-orange">.btn .btn-orange</button>
+				<button class="btn btn-yellow">.btn .btn-yellow</button>
+				<button class="btn btn-navy">.btn .navy</button>
+			</div>
+
+			<div class="demo sizes">
+				<button class="btn btn-small">.btn .btn-small</button>
+				<button class="btn">.btn</button>
+				<button class="btn btn-large">.btn .btn-large</button>
+			</div>
+
+		</div>
+	</div>
+
+	
+
+	
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/less.min.js"></script>
+	<script type="text/javascript" charset="utf-8">
+	$(function () {
+
+		changeStyle($(".styles li a").first());
+
+		$(".styles li a").click(function() { 
+			/*
+			$("#style").attr("href",$(this).attr('rel'));
+			$(".title").html($(this).attr('data-title'));
+			$(".description").html($(this).attr('data-description'));
+
+			$(".css").attr("href",$(this).attr('rel'));
+			var scss = $(this).attr('rel').slice(0,-3)+'scss';
+			$(".scss").attr("href",scss);
+			*/
+			changeStyle($(this));
+
+			return false;
+		});
+	});
+
+	function changeStyle($style)
+	{
+		$("#style").attr("href",$style.attr('rel'));
+		$(".title").html($style.attr('data-title'));
+		$(".description").html($style.attr('data-description'));
+
+		$(".css").attr("href",$style.attr('rel'));
+		var scss = $style.attr('rel').slice(0,-3)+'scss';
+		$(".scss").attr("href",scss);
+	}
+	</script>
+</body>
+</html>

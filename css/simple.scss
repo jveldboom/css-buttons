@@ -1,0 +1,82 @@
+@import 'colors';
+
+@mixin colors($color,$font:#fff){
+   
+	@if lightness($color) > 60% {
+		$font: #444;
+		text-shadow: 0 1px 1px rgba(lighten($font,40),.3);
+	}
+	@else 
+   {
+   	color: $font;
+   	text-shadow: 0 1px 1px rgba(darken($font,20),.3);
+   }
+	border: solid 1px darken($color,5%);
+	background: $color;
+	background: -webkit-gradient(linear, left top, left bottom, from(lighten($color,5)), to(darken($color,5)));
+	background: -moz-linear-gradient(top,  lighten($color,5),  darken($color,5));
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#7db72f', endColorstr='#4e7d0e');
+	&:hover {
+        background-color: darken($color,5%);
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, darken($color,5%)), color-stop(100%, darken($color,10%)));
+        background-image: -webkit-linear-gradient(top, darken($color,3%), darken($color,5%));
+        background-image: -moz-linear-gradient(top, darken($color,5%), darken($color,15%));
+        background-image: -ms-linear-gradient(top, darken($color,5%), darken($color,15%));
+        background-image: -o-linear-gradient(top, darken($color,5%), darken($color,15%));
+        background-image: linear-gradient(top, darken($color,5%), darken($color,15%));
+        border-top: 1px solid ($color - #444);
+        border-left: 1px solid ($color - #555);
+        border-bottom: 1px solid ($color - #666);
+        border-right: 1px solid ($color - #555);
+    }
+    &:active {
+        border: 1px solid desaturate(darken($color,25%),30%);
+    }
+}
+
+
+.btn {
+	display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 13px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 1em;
+	
+	-webkit-border-radius: .3em; 
+	-moz-border-radius: .3em;
+	border-radius: .3em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.btn:hover {
+	text-decoration: none;
+}
+.btn:active {
+	position: relative;
+	top: 1px;
+}
+
+.btn-large {
+	font-size: 1.4em;
+	padding: .4em 1.5em;
+}
+.btn-small {
+	font-size: .8em;
+	padding: .5em 1em;
+}
+
+.btn {@include colors($color-gray-lighter);}
+.btn-red {@include colors($color-red);}
+.btn-blue {@include colors($color-blue);}
+.btn-green {@include colors($color-green);}
+.btn-purple {@include colors($color-purple);}
+.btn-turquoise {@include colors($color-turquoise);}
+.btn-orange {@include colors($color-orange);}
+.btn-yellow {@include colors($color-yellow);}
+.btn-gray {@include colors($color-gray);}
+.btn-navy {@include colors($color-navy);}

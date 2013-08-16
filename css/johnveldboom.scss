@@ -1,0 +1,66 @@
+@import 'colors';
+.btn {
+  font-size: 1em;
+  font-weight: 500;
+  border: none;
+  color: #ffffff;
+  padding: 9px 12px 10px;
+  line-height: 22px;
+  text-decoration: none;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-backface-visibility: hidden;
+}
+.btn:hover, .btn:focus
+ {
+  outline: none;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-backface-visibility: hidden;
+}
+.btn:active
+{
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn-large {
+	font-size: 1.2em;
+	line-height: 20px;
+	padding: 12px 18px 13px;
+}
+
+.btn-small {
+	font-size: .8em;
+	line-height: 20px;
+	padding: 4px 8px 5px;
+}
+
+/* colors */
+@mixin buttons($color) {
+	background: $color;
+	color: #fff;
+
+	&:hover, &:focus {
+		background: lighten($color,10);
+	}
+	&:active {
+		background: darken($color,10);
+	}
+}
+
+.btn {@include buttons($color-gray);}
+.btn.btn-red {@include buttons($color-red);}
+.btn.btn-blue {@include buttons($color-blue);}
+.btn.btn-turquoise {@include buttons($color-turquoise);}
+.btn.btn-green {@include buttons($color-green);}
+.btn.btn-purple {@include buttons($color-purple);}
+.btn.btn-navy {@include buttons($color-navy);}
+.btn.btn-yellow {@include buttons($color-yellow);}
+.btn.btn-orange {@include buttons($color-orange);}
+.btn.btn-gray {@include buttons($color-gray);}

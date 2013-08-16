@@ -1,0 +1,117 @@
+.btn {
+  font-size: 1em;
+  font-weight: 500;
+  border: none;
+  color: #ffffff;
+  padding: 9px 12px 10px;
+  line-height: 22px;
+  text-decoration: none;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-backface-visibility: hidden; }
+
+.btn:hover, .btn:focus {
+  outline: none;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-backface-visibility: hidden; }
+
+.btn:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+.btn-large {
+  font-size: 1.2em;
+  line-height: 20px;
+  padding: 12px 18px 13px; }
+
+.btn-small {
+  font-size: .8em;
+  line-height: 20px;
+  padding: 4px 8px 5px; }
+
+/* colors */
+.btn {
+  background: #95a5a6;
+  color: #fff; }
+  .btn:hover, .btn:focus {
+    background: #b1bdbd; }
+  .btn:active {
+    background: #798d8f; }
+
+.btn.btn-red {
+  background: #e74c3c;
+  color: #fff; }
+  .btn.btn-red:hover, .btn.btn-red:focus {
+    background: #ed7669; }
+  .btn.btn-red:active {
+    background: #d62c1a; }
+
+.btn.btn-blue {
+  background: #3498db;
+  color: #fff; }
+  .btn.btn-blue:hover, .btn.btn-blue:focus {
+    background: #5faee3; }
+  .btn.btn-blue:active {
+    background: #217dbb; }
+
+.btn.btn-turquoise {
+  background: #1abc9c;
+  color: #fff; }
+  .btn.btn-turquoise:hover, .btn.btn-turquoise:focus {
+    background: #28e1bd; }
+  .btn.btn-turquoise:active {
+    background: #148f77; }
+
+.btn.btn-green {
+  background: #2ecc71;
+  color: #fff; }
+  .btn.btn-green:hover, .btn.btn-green:focus {
+    background: #54d98c; }
+  .btn.btn-green:active {
+    background: #25a25a; }
+
+.btn.btn-purple {
+  background: #9b59b6;
+  color: #fff; }
+  .btn.btn-purple:hover, .btn.btn-purple:focus {
+    background: #b07cc6; }
+  .btn.btn-purple:active {
+    background: #804399; }
+
+.btn.btn-navy {
+  background: #34495e;
+  color: #fff; }
+  .btn.btn-navy:hover, .btn.btn-navy:focus {
+    background: #46627f; }
+  .btn.btn-navy:active {
+    background: #222f3d; }
+
+.btn.btn-yellow {
+  background: #f1c40f;
+  color: #fff; }
+  .btn.btn-yellow:hover, .btn.btn-yellow:focus {
+    background: #f4d03f; }
+  .btn.btn-yellow:active {
+    background: #c29d0b; }
+
+.btn.btn-orange {
+  background: #e67e22;
+  color: #fff; }
+  .btn.btn-orange:hover, .btn.btn-orange:focus {
+    background: #eb9950; }
+  .btn.btn-orange:active {
+    background: #bf6516; }
+
+.btn.btn-gray {
+  background: #95a5a6;
+  color: #fff; }
+  .btn.btn-gray:hover, .btn.btn-gray:focus {
+    background: #b1bdbd; }
+  .btn.btn-gray:active {
+    background: #798d8f; }

@@ -1,0 +1,75 @@
+@import 'colors';
+@mixin colors($color){
+	@if lightness($color) > 90% {
+		color: #444;
+	} @else {
+		color: #fff;
+		text-shadow: 0 1px 1px darken(rgba($color,.4),40);
+	}
+
+
+	background-image: -webkit-linear-gradient(top, lighten($color,20), lighten($color,25));
+	background-image: -moz-linear-gradient(top, $color, lighten($color,20));
+	background-image: -ms-linear-gradient(top, $color, lighten($color,20));
+	background-image: -o-linear-gradient(top, $color, darken($color,20));
+	background-image: linear-gradient(top, $color, darken($color,3%));
+	
+	border-top: 1px solid ($color - #222);
+	border-left: 1px solid ($color - #333);
+	border-bottom: 1px solid ($color - #444);
+	border-right: 1px solid ($color - #333);
+	&:hover {
+		background-image: -webkit-linear-gradient(top, lighten($color,15), lighten($color,20));
+		background-image: -moz-linear-gradient(top, darken($color,5%), darken($color,15%));
+		background-image: -ms-linear-gradient(top, darken($color,5%), darken($color,15%));
+		background-image: -o-linear-gradient(top, darken($color,5%), darken($color,15%));
+		background-image: linear-gradient(top, darken($color,5%), darken($color,15%));
+		border-top: 1px solid ($color - #444);
+		border-left: 1px solid ($color - #555);
+		border-bottom: 1px solid ($color - #666);
+		border-right: 1px solid ($color - #555);
+	}
+	&:active {
+		border: 1px solid desaturate(darken($color,5),40);
+		-webkit-box-shadow: inset 0 0 4px 1px darken($color,2), 0 0 1px 0 darken($color,50);
+		-moz-box-shadow: inset 0 0 4px 1px darken($color,2), 0 0 1px 0 darken($color,50);
+		box-shadow: inset 0 0 4px 1px darken($color,2), 0 0 1px 0 darken($color,50);
+	}
+}
+a.btn {text-decoration: none;}
+.btn {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -webkit-box-shadow: inset 0 1px 0 0 white;
+  -moz-box-shadow: inset 0 1px 0 0 white;
+  box-shadow: inset 0 1px 0 0 white;
+  cursor: pointer;
+  font: normal .7em "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  line-height: 1;
+  padding: 6px 8px;
+  text-align: center;
+  width: 150px; }
+
+
+.btn-small {
+	padding: 4px 6px;
+	font-size: .6em;
+	width: 125px;
+}
+.btn-large {
+	padding: 10px 16px;
+	font-size: 1em;
+	width: 200px;
+}
+
+.btn {@include colors(#f9f9f9);}
+.btn-red {@include colors($color-red);}
+.btn-blue {@include colors($color-blue);}
+.btn-green {@include colors($color-green);}
+.btn-purple {@include colors($color-purple);}
+.btn-turquoise {@include colors($color-turquoise);}
+.btn-orange {@include colors($color-orange);}
+.btn-yellow {@include colors($color-yellow);}
+.btn-gray {@include colors($color-gray);}
+.btn-navy {@include colors($color-navy);}

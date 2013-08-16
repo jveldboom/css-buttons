@@ -1,0 +1,44 @@
+body {
+	font-family: 'Lato',"Helvetica", Helvetica, Arial, sans-serif;
+}
+header {
+	padding: 20px;
+	background: #323A45;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+hr {
+	border: solid #ddd;
+	border-width: 1px 0 0;
+	clear: both;
+	margin: 1.25em 0 1.1875em;
+	height: 0;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+ul li a {
+	padding: 5px;
+	display: block;
+}
+
+ul li:hover {
+	background: #ddd;
+}
+
+.btn {
+	margin-bottom: 15px;
+}
+
+.demo {
+	padding: 20px 20px 10px;
+}
+
+.demo.dark {
+	background: #333;
+}
+
